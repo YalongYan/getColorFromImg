@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片颜色拾取器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upload-section">
+            <input type="file" id="imageInput" accept="image/*" style="display: none;">
+            <button id="uploadBtn">上传图片</button>
+        </div>
+        
+        <div class="preview-section">
+            <div class="image-container">
+                <img id="previewImage" style="display: none;">
+            </div>
+        </div>
+        
+        <div class="color-section">
+            <div class="color-display"></div>
+            <div class="color-values">
+                <div class="color-value-item">
+                    <span class="color-value" id="hexValue">#000000</span>
+                    <button class="copy-btn" data-value="hex">复制</button>
+                </div>
+                <div class="color-value-item">
+                    <span class="color-value" id="rgbValue">rgb(0, 0, 0)</span>
+                    <button class="copy-btn" data-value="rgb">复制</button>
+                </div>
+            </div>
+            <div class="paste-test">
+                <input type="text" id="pasteInput" placeholder="在这里粘贴测试复制的颜色值">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
